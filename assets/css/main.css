@@ -1,0 +1,121 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0, #fe6532, #f53d2d);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 4px 0;
+}
+
+.header__navbar-item,
+.header__navbar-item-link {
+    font-size: 1.38rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link {
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-item:hover,
+.header__navbar-icon-link:hover,
+.header__navbar-item-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.header__navbar-item {
+    position: relative;
+    margin-left: 16px;
+}
+
+.header__navbar-item--strong {
+    font-weight: 500;
+}
+
+.header__navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1.5px solid #f96f5c;
+    height: 14px;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* icon fb - ig */
+
+.header__navbar-icon-link {
+    color: white;
+    text-decoration: none;
+}
+
+.header__navbar-icon {
+    font-size: 1.6rem;
+    margin: 0 4px;
+}
+
+.header__navbar-lable--no-poiter {
+    cursor: text;
+    color: white;
+}
+
+
+/* --------------------------- */
+
+
+/* qr codee & dowload app */
+
+.header__qr {
+    position: absolute;
+    top: 116%;
+    left: 0;
+    background-color: var(--white-color);
+    width: 186px;
+    padding: 4px;
+    border-radius: 3px;
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+}
+
+.header__navbar-item--has-qr:hover .header__qr {
+    display: block;
+}
+
+.header__qr-image {
+    width: 100%;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px 10px;
+}
+
+.header__qr-dowload-image {
+    width: 48%;
+}
+
+.header__navbar-item--has-qr::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    width: 186px;
+    height: 12px;
+}
