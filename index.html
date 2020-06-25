@@ -42,18 +42,71 @@
                         </li>
                     </ul>
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
                             <a href="" class="header__navbar-item-link">
                                 <!-- icon -->
-                                <i class="header__navbar-icon far fa-bell"></i> Thông Báo</a>
+                                <i class="header__navbar-icon far fa-bell"></i> Thông Báo
+                            </a>
+                            <!-- notification -->
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông Báo Mới Nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="assets/img/shoe.jfif" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-title">
+                                                    Sản phẩm AVB được sản xuất tại VN
+                                                </span>
+                                                <p class="header__notify-description">
+                                                    Mô tả sản phẩm: sản phẩm hỗ trợ chạy nhảy vui chơi không lo đau chân mõi gối trong mọi trường hợp
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="assets/img/shoe.jfif" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-title">
+                                                    Sản phẩm AVB được sản xuất tại VN
+                                                </span>
+                                                <p class="header__notify-description">
+                                                    Mô tả sản phẩm: sản phẩm hỗ trợ chạy nhảy vui chơi không lo đau chân mõi gối trong mọi trường hợp
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="assets/img/shoe.jfif" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-title">
+                                                    Sản phẩm AVB được sản xuất tại VN
+                                                </span>
+                                                <p class="header__notify-description">
+                                                    Mô tả sản phẩm: sản phẩm hỗ trợ chạy nhảy hơi không lo đau chân chân mõi gối tro vui chơi không lo đn mõi gối tro vui chơi không lo đau chân mõi gối trong mọi trường hợp
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-link">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
                         </li>
                         <li class="header__navbar-item">
                             <a href="" class="header__navbar-item-link">
                                 <!-- icon -->
                                 <i class="header__navbar-icon far fa-question-circle"></i> Trợ Giúp</a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng Ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng Nhập</li>
+                        <li class="header__navbar-item header__navbar-item--separate">Đăng Ký</li>
+                        <li class="header__navbar-item">Đăng Nhập</li>
                     </ul>
                 </nav>
             </div>
@@ -70,7 +123,89 @@
         </footer>
     </div>
 
-    <script src="https://kit.fontawesome.com/28a36ea143.js" crossorigin="anonymous"></script>
+    <!-- modal layout -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- register form  -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                        <span class="auth-form__switch-btn">Đăng Nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Your Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Your Password">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Verify Password">
+                        </div>
+                    </div>
+
+
+                    <div class="auth-form__terms">
+                        <p class="auth-form__policy-text">Bằng việc đăng ký, bạn đã đồng ý với Shopee về <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> & <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form_controls">
+                        <button class="btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="btn--with-icon btn--with-icon--fb">
+                            <i class="fab fa-facebook-square"></i> <span class="auth-form__socials-text">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="btn--with-icon btn--with-icon--gg">
+                            <i class="fab fa-google"></i> <span class="auth-form__socials-text--gg">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- login form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng Ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Your Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Your Password">
+                        </div>
+                    </div>
+
+                    <div class="auth-from__help">
+                        <a href="" class="auth-form__help-links auth-form__help-forgot-pass">Quên Mật Khẩu</a>
+                        <a href="" class="auth-form__help-links">Cần Trợ Giúp ?</a>
+                    </div>
+
+                    <div class="auth-form_controls">
+                        <button class="btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="btn--with-icon btn--with-icon--fb">
+                            <i class="fab fa-facebook-square"></i> <span class="auth-form__socials-text">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="btn--with-icon btn--with-icon--gg">
+                            <i class="fab fa-google"></i> <span class="auth-form__socials-text--gg">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
