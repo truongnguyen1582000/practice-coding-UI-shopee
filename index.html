@@ -105,8 +105,24 @@
                                 <!-- icon -->
                                 <i class="header__navbar-icon far fa-question-circle"></i> Trợ Giúp</a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--separate">Đăng Ký</li>
-                        <li class="header__navbar-item">Đăng Nhập</li>
+                        <!-- <li class="header__navbar-item header__navbar-item--separate">Đăng Ký</li>
+                        <li class="header__navbar-item">Đăng Nhập</li> -->
+                        <li class="header__navbar-item header__navbar-item-has-profile">
+                            <a href="" class="header__navbar-item-link">
+                                <img src="assets/img/avatar.jfif" alt="" class="header__navbar-item-avatar"> nguyentvantruong
+                            </a>
+                            <ul class="header__navbar-profile-list">
+                                <li class="header__navbar-profile-item">
+                                    <a href="" class="header__navbar-profile-item-link">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-profile-item">
+                                    <a href="" class="header__navbar-profile-item-link">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-profile-item">
+                                    <a href="" class="header__navbar-profile-item-link">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
 
@@ -140,6 +156,66 @@
                             </li>
                         </ul>
 
+                        <div class="header__search-suggest">
+                            <ul class="header__search-suggest-list">
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        đồ ăn vặt
+                                    </a>
+                                </li>
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        ví nam
+                                    </a>
+                                </li>
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        Quần jogger
+                                    </a>
+                                </li>
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        máy tính
+                                    </a>
+                                </li>
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        chuột
+                                    </a>
+                                </li>
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        bàn phím cơ
+                                    </a>
+                                </li>
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        áo thun nam
+                                    </a>
+                                </li>
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        nước lọc
+                                    </a>
+                                </li>
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        điện thoại
+                                    </a>
+                                </li>
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        cáp sạc iphone
+                                    </a>
+                                </li>
+                                <li class="header__search-suggest-item">
+                                    <a href="" class="header__search-suggest-item-link">
+                                        balo du lịch
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                         <div class="header__search-select">
                             <span class="header__search-select-lable">
                                 Trong Shopee
@@ -163,9 +239,54 @@
                     <div class="header__cart">
                         <a href="" class="header__cart-link">
                             <i class="header__cart-item fas fa-shopping-cart"></i>
+                            <span class="header__cart-item-notice">3</span>
                         </a>
                         <div class="header__cart-empty">
                             <img src="./assets/img/empty-cart.png" alt="" class="header__cart-empty-img">
+                        </div>
+                        <div class="header__cart-has-item">
+                            <h3 class="header__cart-heading">Sản Phẩm Mới Thêm</h3>
+                            <ul class="header__cart-list">
+                                <li class="heaeder__cart-item">
+                                    <a href="" class="header__cart-item-link">
+                                        <img src="assets/img/shoe.jfif" alt="" class="header__cart-item-img">
+                                        <span class="header__cart-item-title">Giày Nike Xấu VCL cũng...</span>
+                                        <div class="header__cart-item-detail">
+                                            <span class="header__cart-item-detail-cost">$159.000
+                                            <span class="header__cart-item-amount">x 2</span>
+                                            </span>
+                                            <button class="header__cart-item-delete">Xóa</button>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="heaeder__cart-item">
+                                    <a href="" class="header__cart-item-link">
+                                        <img src="assets/img/shoe.jfif" alt="" class="header__cart-item-img">
+                                        <span class="header__cart-item-title">Giày Nike Xấu VCL cũng mua...</span>
+                                        <div class="header__cart-item-detail">
+                                            <span class="header__cart-item-detail-cost">$159.000
+                                            <span class="header__cart-item-amount">x 2</span>
+                                            </span>
+                                            <button class="header__cart-item-delete">Xóa</button>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="heaeder__cart-item">
+                                    <a href="" class="header__cart-item-link">
+                                        <img src="assets/img/shoe.jfif" alt="" class="header__cart-item-img">
+                                        <span class="header__cart-item-title">Giày Nike Xấu VCL cũng mua...</span>
+                                        <div class="header__cart-item-detail">
+                                            <span class="header__cart-item-detail-cost">$159.000
+                                            <span class="header__cart-item-amount">x 2</span>
+                                            </span>
+                                            <button class="header__cart-item-delete">Xóa</button>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="header__cart-open">
+                                <button class="btn btn--primary">Xem Giỏ Hàng</button>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -79,5 +79,11 @@ html {
 }
 
 .btn--primary:hover {
-    background-color: var(--primary-color);
+    background-color: rgb(240, 93, 64);
+}
+
+.header__cart-open {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
