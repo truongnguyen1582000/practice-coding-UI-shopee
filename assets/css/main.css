@@ -985,3 +985,134 @@
     right: -4px;
     color: var(--primary-color);
 }
+
+
+/* sort bar */
+
+.sort-bar {
+    background-color: #ededed;
+    padding: 12px 20px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.sort-bar__label {
+    font-size: 1.5rem;
+    color: rgb(99, 99, 89);
+}
+
+.sort-bar .btn {
+    min-width: 88px;
+}
+
+.sort-bar .btn:hover {
+    background-color: white;
+}
+
+.sort-bar .btn--primary:hover {
+    background-color: rgb(240, 93, 64);
+}
+
+.sort-by-price {
+    display: inline-flex;
+    align-items: center;
+    width: 200px;
+    background-color: var(--white-color);
+    height: 34px;
+    margin-left: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sort-by-price__label {
+    flex: 1;
+    padding: 0 12px 0 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.sort-by-price__icon {
+    margin-right: 12px;
+    font-size: 1.4rem;
+}
+
+.sort-by-price__option {
+    position: absolute;
+    top: 105%;
+    background-color: var(--white-color);
+    width: 100%;
+    border-radius: 3px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: none;
+}
+
+.sort-by-price:hover .sort-by-price__option {
+    display: block;
+}
+
+.sort-by-price__option::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    height: 6px;
+}
+
+.sort-by-price__select {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    padding-left: 14px;
+    font-size: 1.5rem;
+}
+
+.sort-by-price__select:hover {
+    color: var(--primary-color);
+}
+
+.sort-by-price__select:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.sort-by-price__select:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.mini-page-controller {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 1.3rem;
+}
+
+.mini-page-controller__current {
+    color: var(--primary-color);
+}
+
+.mini-page-controller__btn {
+    height: 34px;
+    border: none;
+    background-color: white;
+    margin-right: 1px;
+    width: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.mini-page-controller__btn--disable {
+    background-color: rgb(249, 249, 249);
+    cursor: default;
+}
+
+.mini-page-controller__btn:not(:last-child) {
+    margin-left: 20px;
+}
+
+.fa-chevron-left .fa-chevron-right {
+    font-size: 1.4rem;
+}
