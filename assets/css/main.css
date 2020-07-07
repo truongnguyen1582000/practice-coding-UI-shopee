@@ -801,6 +801,10 @@
     font-size: 1.5rem;
     cursor: text;
     display: inline;
+    line-height: 1.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .header__cart-item-detail {
@@ -1014,6 +1018,10 @@
     background-color: rgb(240, 93, 64);
 }
 
+.sort-bar .btn--primary {
+    margin-left: 16px;
+}
+
 .sort-by-price {
     display: inline-flex;
     align-items: center;
@@ -1047,6 +1055,7 @@
     padding-top: 8px;
     padding-bottom: 8px;
     display: none;
+    z-index: 2;
 }
 
 .sort-by-price:hover .sort-by-price__option {
@@ -1087,7 +1096,7 @@
     display: inline-flex;
     align-items: center;
     margin-left: auto;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .mini-page-controller__current {
@@ -1109,10 +1118,112 @@
     cursor: default;
 }
 
+.mini-page-controller__btn--disable .fa-chevron-left {
+    color: #ccc;
+}
+
 .mini-page-controller__btn:not(:last-child) {
     margin-left: 20px;
 }
 
 .fa-chevron-left .fa-chevron-right {
     font-size: 1.4rem;
+}
+
+
+/* product list */
+
+.product-list {}
+
+.product-item {
+    margin-top: 8px;
+    background-color: var(--white-color);
+    width: 192px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.product-item__img {
+    width: 192px;
+    height: 192px;
+    object-fit: contain;
+    background-size: cover;
+}
+
+.product-item__info {
+    padding: 8px;
+    padding-bottom: 4px;
+}
+
+.product-item__name {
+    font-size: 1.5rem;
+    width: 174px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-item__voucher {
+    font-size: 1.2rem;
+    width: 80px;
+    height: 20px;
+    padding: 2px 4px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    cursor: default;
+}
+
+.product-item__price {
+    font-size: 1.4rem;
+}
+
+.product-item__price--origin-price {
+    text-decoration: line-through;
+    color: rgb(119, 119, 119);
+    padding-right: 4px;
+}
+
+.product-item__price--discount-price {
+    color: var(--primary-color);
+}
+
+.product-item__price-currency-unit {
+    font-size: 1.1rem;
+    position: relative;
+    top: -2px;
+}
+
+.product-item__free-ship-icon {
+    width: 16px;
+    margin-left: 50px;
+}
+
+.product-item__selling {
+    display: flex;
+    align-items: center;
+}
+
+.product-item__selling-fav-icon {
+    color: rgb(117, 117, 117);
+    font-size: 1.4rem;
+    margin-right: auto;
+}
+
+.product-item__selling-rating {
+    margin-right: 6px;
+}
+
+.product-item__selling-rating-icon {
+    font-size: 0.8rem;
+    color: rgb(255, 206, 61);
+}
+
+.product-item__selling-sold {
+    font-size: 1.2rem;
+}
+
+.product-item__address {
+    text-align: end;
+    font-size: 1.3rem;
+    color: rgb(95, 95, 95);
 }

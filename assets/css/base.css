@@ -49,6 +49,12 @@ html {
     width: 16.667%;
 }
 
+.grid__column-2-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 19.7%;
+}
+
 .grid__column-10 {
     padding-left: 12px;
     padding-right: 12px;
