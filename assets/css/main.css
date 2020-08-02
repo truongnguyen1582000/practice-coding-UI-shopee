@@ -1379,7 +1379,8 @@
 /* footer */
 
 .footer {
-    margin-top: 5px;
+    margin-top: 0;
+    border-top: 120px solid white;
 }
 
 .customer-care {}
@@ -1391,6 +1392,12 @@
     padding-top: 40px;
     padding-bottom: 10px;
     text-transform: uppercase;
+    position: relative;
+}
+
+.footer-line {
+    border-top: 1px solid rgb(232, 232, 232);
+    border-bottom: 1px solid rgb(232, 232, 232);
 }
 
 .customer-care__list {
@@ -1411,4 +1418,139 @@
 
 .customer-care__item-link:hover {
     color: var(--primary-color);
+}
+
+.payment {}
+
+.payment__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.payment__list-item {}
+
+.payment__list-item-img {
+    max-width: 80px;
+    max-height: 46px;
+}
+
+.shipping-unit {
+    padding-top: 10px;
+}
+
+.follow-us__list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+.follow-us__item {
+    margin-bottom: 4px;
+}
+
+.follow-us__icon {
+    margin-right: 4px;
+    color: rgb(74, 74, 74);
+    margin-left: 0;
+    font-size: 1.4rem;
+}
+
+.follow-us__item-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.follow-us__link-text {
+    display: inline;
+    color: rgb(117, 117, 117);
+}
+
+.download-app {
+    display: flex;
+}
+
+.download-app__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.dowload-app__qr {
+    width: 86px;
+}
+
+.download-app__mobile-logo {
+    width: 86px;
+}
+
+.footer__copyright-and-region {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__coppyright {
+    color: rgb(117, 117, 117);
+    font-size: 1.4rem;
+}
+
+.footer__region-heading {
+    color: rgb(117, 117, 117);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.footer__region {
+    display: flex;
+}
+
+.footer__region-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer__region-item {
+    font-size: 1.45rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 6px;
+    position: relative;
+}
+
+.footer__region-item-link {
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+}
+
+.footer__region-item:not(:last-child):after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 60%;
+    right: -6px;
+    background-color: rgb(200, 200, 200);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contact {
+    width: 880px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(117, 117, 117);
+    margin: 0;
+}
+
+.contact p:first-child {
+    margin-bottom: 12px;
 }
